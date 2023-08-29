@@ -4,11 +4,11 @@ on:
   # push:
   workflow_dispatch:
     inputs:
-      TEST_ENDPOINT:
+      GITHUB_TEST_ENDPOINT:
         description: "System under test"
         required: true
         default: https://qa.testbed.url
-      TEST_BROWSER:
+      GITHUB_BROWSER:
         description: "Browser used for tests"
         required: true
         default: chrome
