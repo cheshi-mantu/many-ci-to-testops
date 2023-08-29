@@ -44,7 +44,8 @@ jobs:
       - name: Run pytest tests
         run: |
           allurectl watch -- pytest ./test --alluredir=${ALLURE_RESULTS} --capture=no || true
-          printenv | grep TEST_
+          printenv | grep GITHUB_
+          printenv | grep ALLURE_
         env:
           GITHUB_TEST_ENDPOINT: ${{ github.event.inputs.GITHUB_TEST_ENDPOINT }}
           GITHUB_BROWSER: ${{ github.event.inputs.GITHUB_BROWSER }}
