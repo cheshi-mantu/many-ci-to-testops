@@ -46,5 +46,5 @@ jobs:
           allurectl watch -- pytest ./test --alluredir=${ALLURE_RESULTS} --capture=no || true
           printenv | grep TEST_
         env:
-          TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
-          TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
+          GITHUB_TEST_ENDPOINT: ${{ github.event.inputs.GITHUB_TEST_ENDPOINT }}
+          GITHUB_BROWSER: ${{ github.event.inputs.GITHUB_BROWSER }}
