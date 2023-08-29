@@ -39,7 +39,7 @@ jobs:
         uses: allure-framework/setup-allurectl@v1
         with:
           allure-endpoint: https://testing.allure.aws.qameta.in
-          allure-token: ${{ secrets.ALLURE_TOKEN_DEMO }}
+          allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 4690
       - name: Run pytest tests
         run: |
