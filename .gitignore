@@ -1,0 +1,6 @@
+# Idea
+.idea
+testplan.json
+allure-results/
+__pycache__
+.vscode
